@@ -11,8 +11,14 @@ let Event = new Schema({
   event_desc: {
     type: String
   },
+  event_desc_other: {
+    type: String
+  },
   event_gst_number: {
     type: Number
+  },
+  event_gst_date: {
+    type: Date
   }
 },{
     collection: 'event'

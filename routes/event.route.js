@@ -47,7 +47,9 @@ eventRoutes.route('/update/:id').post(function (req, res) {
     else {
         event.event_name = req.body.event_name;
         event.event_desc = req.body.event_desc;
+        event.event_desc_other = req.body.event_desc_other;
         event.event_gst_number = req.body.event_gst_number;
+        event.event_gst_date = req.body.event_gst_date;
 
         event.save().then(event => {
           res.json('Update complete');
