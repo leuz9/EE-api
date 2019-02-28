@@ -45,6 +45,7 @@ eventRoutes.route('/update/:id').post(function (req, res) {
     if (!event)
       return next(new Error('Could not load Document'));
     else {
+      event.event_imgHome = req.body.event_imgHome;
         event.event_name = req.body.event_name;
         event.event_desc = req.body.event_desc;
         event.event_desc_other = req.body.event_desc_other;

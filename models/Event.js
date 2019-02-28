@@ -5,6 +5,9 @@ const Schema = mongoose.Schema;
 
 // Define collection and schema for Events
 let Event = new Schema({
+  event_imgHome: {
+    type: File
+  },
   event_name: {
     type: String
   },
